@@ -12,3 +12,8 @@ def traduzir_texto(texto, idioma_alvo):
         temperature=0.7, 
 	) 
 	return resposta.choices[0].text.strip()
+
+texto = "Olá, mundo!"
+idioma_alvo = "es" # Espanhol
+traducao = traduzir_texto(texto, idioma_alvo)
+print(traducao) # ¡Hola mundo!
